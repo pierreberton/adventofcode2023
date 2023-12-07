@@ -14,7 +14,7 @@ import java.util.Set;
 
 public class Part2 {
     public static void main(String[] args) {
-        ClassLoader classLoader = fr.bertonp.adventofcode.day1.Part1.class.getClassLoader();
+        ClassLoader classLoader = Part2.class.getClassLoader();
 
         try (InputStream resource = classLoader.getResourceAsStream("day3/input.txt")) {
             if (resource != null) {
